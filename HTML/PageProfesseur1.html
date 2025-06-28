@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PageProfesseur1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' media='screen' href='PageProfesseur1.css'>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-group logo">
+            <a id="Logo">MySuggestion</a>
+        </div>
+        <div class="nav-group EtudiantInfo">
+            <p>Nom Prénom</p>
+            <div class="EtudiantImg">
+                <img src="T:\Incog Zone\IDA Zone\Coding\Developpement Web\School\School project\IDA2WebSite\files\Default ID img 1.jpg">
+            </div>
+        </div>
+        <div class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('active')">
+            <span>☰</span>
+        </div>
+        <nav class="nav-group menu">
+            <a>Acceuil</a>
+            <a>Appréciation étudiant</a>
+            <a>Appréciation enseignement</a>
+            <a>Contact</a>
+            <a>FeedBack</a>
+        </nav>
+    </header>
+    <div class="profil">
+        <div class="middle">
+            <h2>profil</h2>
+            <img src="professeur.jpg" alt="photo">
+            <form name="connexion" action="traitement.php">
+                <label for="name">NOM*:</label>
+                <input type="text" name="name">
+                <br>
+                <label for="prenom">PRENOM*:</label>
+                <input type="text" name="prenom">
+                <br>
+                <label for="date de naissance">DATE DE NAISSANCE*:</label>
+                <input type="date" name="date de naissance">
+                <br>
+                <label for="lieu de naissance">LIEU DE NAISSANCE*:</label>
+                <input type="text" name="lieu de naissance">
+                <br>
+                <label for="e-mail">E-MAIL*:</label>
+                <input type="e-mail" placeholder="abcd@gmail.com" name="e-mail">
+                <br>
+                <label for="sex">SEX:</label>
+                <select>
+                    <option value="">---------</option>
+                    <option value="homme">HOMME</option>
+                    <option value="femme">FEMME</option>
+                </select>
+                <br>
+                <label for="grade">GRADE*</label>
+                <select>
+                    <option value="">--------</option>
+                    <option value="ingenieur/master">INGENIEUR/MASTER</option>
+                    <option value="doctorat">DOCTORAT</option>
+                    <option value="professeur">PROFESSEUR</option>
+                </select>
+                <br>
+                <h2>Veillez saisir votre profil de carrière</h2>
+                <div>
+                    <label for="Specialité">Veillez saisir vos spécialité enseigner ainsi que vos année d'esperiance dans cette spécialiter</label><br>
+                    <textarea id="Suggestion" name="Specialité" rows="4"></textarea>
+        
+                </div>
+                <a href="PageProfesseur0,5.html">
+                <input type="submit" value="Enregistrer">
+                </a>
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,502 @@
+/*-------------------- Page SuggestionEtudiant --------------------*/
+
+/*----------large screen*/
+body{
+    background-color: #fff2b6;
+    color: #573823;
+    font-family: "Arial-Rounded";
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    box-sizing: border-box;
+}
+a{
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    position:sticky;
+    padding:5px;
+    align-items: center;
+    justify-content: space-between;
+    /*background-color: #fcea9d;*/
+    margin-left: 0;
+    padding-left: 0;
+    /*margin-right: 3vw;
+    padding: 0.2vw;*/
+    top: 0;
+    /*left: 0;
+    right: 0;*/
+    width: 100vw;
+    background-color: #fff2b6;
+    padding-bottom: 10px;
+    z-index: 1;
+    /*margin-left: 0px;
+    padding-left: 0px;*/
+}
+.header a{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+/*.header dl dd::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 5px;
+    border-radius: 25px;
+    background-color: rgb(102, 70, 0);
+    transition: width 6s ease-in-out;
+}
+.header dl dd:hover::after{
+    width: 100%;
+}*/
+
+.nav-group{
+    gap: 3vw;
+}
+
+.logo{
+    margin-left: 3px;
+    margin-right: 2%;
+    background-color: aqua;
+}
+#Logo:hover{
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.EtudiantInfo{
+    text-align: center;
+    background-color: #573823;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+.EtudiantImg{
+    width: 30px;
+    height: 30px;
+    background-color: blueviolet;
+    border-radius: 48px;
+    margin-top: -40px;
+}
+.EtudiantImg img{
+    width: 100%;
+    height: auto;
+    border-radius: 30%;
+    text-align: center;
+}
+.EtudiantInfo p{
+    color: #e0cf81;
+    margin-top: 2%;
+}
+
+.menu-toggle{
+    display: none;
+}
+/*.menu-toggle span{
+
+}*/
+
+.menu{
+    display: flex;
+    padding-right: 3%;
+    margin-right: 5px;
+    background-color: blue;
+}
+.menu a{
+    gap: 100vw;
+    margin-left: 0.1vw;
+    margin-right: 2px;
+    padding-right: 15px;
+    display: inline-block;
+}
+.menu a::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -5px;
+    height: 5px;
+    border-radius: 25px;
+    background-color: rgb(102, 70, 0);
+    transition: width 0.3s ease-in-out;
+    width: 0px;
+}
+.menu a:hover::after{
+    width: 95%;
+    margin-left: -2px;
+}
+
+#hr1{
+    margin: 15px;
+    padding: 1px;
+    border-radius: 35px;
+    background-color: rgb(102, 70, 0);
+    margin-top: 40px;
+    position: flex;
+}
+/*----------*/
+
+h1{
+    text-align: center;
+    width: 100%;
+}
+
+.middle{
+    position:relative;
+    display: flex;
+    width: 100%;
+    background-color: blue;
+    margin: auto;
+    padding: 10px;
+}
+
+/*.form1{
+
+}*/
+
+.FormEtudiant{
+    border-radius: 20px;
+    background-color: #fcea9d;
+    
+    /*margin-left: 95px;*/
+    margin: auto;
+    /*align-items: center;*/
+    text-align: center;
+    width: 600px;
+    min-width: 600px;
+    /**/
+}
+h3{
+    text-align: left;
+}
+
+
+/*#reponse{
+    
+}*/
+#reponses input{
+    margin-left: 3vw;
+    transform: scale(1.4);
+}
+#reponses input:hover{
+    transition: transform 0.4s ease;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+#reponses label:hover{
+    transform: scale(1.5);
+}
+
+.CoursA{
+    background-color: #ffefa7;
+    border-radius: 20px;
+    padding-top: 0.1px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.CoursA1 label{
+    background-color: #e0cf81;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.CoursB{
+    background-color: #ffefa7;
+    border-radius: 20px;
+    padding-top: 0.1px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.CoursB1 label{
+    background-color: #e0cf81;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.CoursC{
+    background-color: #ffefa7;
+    border-radius: 20px;
+    padding-top: 0.1px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.CoursC1 label{
+    background-color: #e0cf81;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.ProfA{
+    background-color: #ffefa7;
+    border-radius: 20px;
+    padding-top: 0.1px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.ProfA1 label{
+    background-color: #e0cf81;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.ProfB{
+    background-color: #ffefa7;
+    border-radius: 20px;
+    padding-top: 0.1px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.ProfB1 label{
+    background-color: #e0cf81;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.commentaire{
+    padding-left: 30px;
+    display: flexbox;
+}
+.commentaire textarea{
+    height: 60px;
+    width: 500px;
+    border-radius: 10px;
+    justify-content:left;
+    max-width: 100%;
+    margin-left: 0px;
+    align-items: left;
+}
+
+.timetable{
+    /*position:static;*/
+    /*justify-content: left;
+    align-items: left;
+    text-align: left;*/
+    background-color: rgb(255, 230, 0);
+    margin-left: 7vw;
+    width: 20vw;
+    min-width: 200px;
+}
+
+.btnSoumettre{
+    background-color: aqua;
+    width: 100%;
+    text-align: center;
+}
+
+.soumettre{
+    border-radius: 15px;
+    padding: 10px;
+    width: 115px;
+    /*height: 40px;*/
+    position: relative;
+
+    cursor: pointer;
+    /*margin-left:50%;*/
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(102, 70, 0);
+    color: rgb(255, 255, 255);
+}
+.soumettre:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.08);
+    /*width: 120.75px;
+    height: 10.05px;*/
+
+}
+/*----------*/
+.foot{
+    background-color: #573823;
+    color: #ffffff;
+    padding: 5px 0;
+    margin: 0;
+
+    width: 100vw;
+    /**/
+    position:relative;
+    min-width: 900px;
+}
+
+.footer{
+    display:flex;
+    /*gap: 10vw;*/
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*padding-top: 0%;*/
+    background-color: blueviolet;
+}
+
+.footer1{
+    width: 350px;
+    background-color: aqua;
+    margin-top: 0px;
+}
+.footer1 a{
+    margin-top: 200px;
+}
+
+.footer2{
+    display:block;
+    background-color: chartreuse;
+    margin-right: 10px;
+    height: 100%;
+}
+.footer2 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+}
+.footer2 a:hover{
+    text-decoration: underline;
+}
+
+.footer3{
+    margin-top: 10px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    background-color: brown;
+    text-align: center;
+}
+
+/*----------phone screen*/
+@media (max-width: 760px) {
+    
+    .header{
+        /*display: flex;
+        /*z-index: 2;*/
+        /*width: 100vw;*/
+        /*position: sticky;
+        background-color: chartreuse;
+        justify-content: start;
+        display: flex;*/
+        /**position:sticky;
+        padding:5px;
+        align-items: center;
+        justify-content: start;
+        /*background-color: #fcea9d;*/
+        /**margin-left: 0;
+        padding-left: 0;**/
+        /*margin-right: 3vw;
+        padding: 0.2vw;*/
+        /**top: 0;
+        /*left: 0;
+        right: 0;*/
+        /**width: 100vw;
+        background-color: #fff2b6;
+        padding-bottom: 10px;
+        z-index: 1;
+        margin-left: 0px;
+        padding-left: 0px;**/
+
+        /**/
+
+    }
+
+    .logo{
+        
+    }
+
+    .EtudiantInfo{
+        /*margin-left: -3vw;
+        /*margin-right: 3vw;*/
+        align-items: center;
+        text-align: center;
+        /*position: fixed;*/
+        margin-left: 13vw;
+
+    }
+    
+    .menu-toggle{
+        display: block;
+        color: brown;
+        width: 10px;
+        height: 10px;
+        background-color:brown;
+        position:fixed;
+        margin-left: 93vw;
+
+    }
+    .menu-toggle span{
+        /*position: absolute;*/
+        cursor: pointer;
+    }
+    
+    .menu{
+        display: none;
+        flex-direction: column;
+        background-color: #573823;
+        color: #fcea9d;
+        /*z-index: 1;*/
+        /*height: 90vh;*/
+        transform: scaleY(0);
+        transform-origin: right;
+        opacity: 0;
+        transition: transform-origin 2.8s ease, opacity 2.8s ease;
+        overflow: hidden;
+    }
+    .menu.active{
+        display: flex;
+        position:absolute;
+        margin-top: 590px;
+        margin-left: 50vw;
+        padding-left: 100px;
+        padding-top: 30%;
+        padding-bottom: 30px;
+        height: 52vh;
+        width: 33vw;
+        gap: 30px;
+        border-bottom-left-radius: 4%;
+        border-top-left-radius: 4%;
+        opacity: 1;
+        transform: scaleY(1);
+        z-index: 2;
+    }
+    .menu a::after{
+        content: '';
+        position:absolute;
+        left: 0;
+        bottom: -5px;
+        height: 5px;
+        border-radius: 25px;
+        background-color: #fcea9d;
+        transition: width 0.3s ease-in-out;
+        width: 0px;
+    }
+    .menu a:hover::after{
+        width: 90%;
+        margin-left: -2px;
+    }
+
+    .foot{
+        justify-content: center;
+    }
+
+    .footer{
+        display: block;
+    }
+}

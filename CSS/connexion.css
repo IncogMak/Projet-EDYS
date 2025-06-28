@@ -1,0 +1,79 @@
+body{
+    background-color: #fff2b6;
+}
+
+.connect-div{
+    position: relative;
+    text-align: center;
+    height: 300px;
+    border-color: #ff0000;
+    border: 10px;
+    border-radius: 10px;
+}
+.image-defaut{
+    border-top: #000000;
+    /*text-align: center;*/
+    margin-top: -140px;
+    background-color: #eee;
+    /*justify-content: flex-start;*/
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    align-items:center ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-defaut img{
+    width: 100%;
+    height: auto;
+    /*display:block;*/
+    /*position: relative;*/
+    text-align: center;
+    margin-left: 50;
+    margin-right: auto;
+}
+
+.connect {
+    border-color: #ffffff;
+    /*border: 10px;*/
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    /*border-width: 10px;*/
+    background-color: rgb(255, 255, 255);
+
+    padding: 100px;
+    margin: 50px;
+    height: 20vh;
+    border-radius: 20px;
+}
+.connection{
+    top: 50%;
+    right: 50%;
+    padding: auto;
+    padding-top: 90px;
+    margin: auto;
+    /*text-align: center;*/
+}
+
+#identifiant{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-style:ridge;
+}
+
+
+#btnConnexion{
+    /*margin-left: auto;
+    margin-right: auto;
+    width: 50%;*/
+    
+    background-color: #ffffff;
+    border-radius: 30px;
+    position:static;
+    padding: 10px;
+    width: 200px;
+
+}

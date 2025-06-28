@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion Etudiant</title>
+    <link rel="stylesheet" href="SuggestionEtudiant.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-group logo">
+            <a id="Logo">MySuggestion</a>
+        </div>
+        <div class="nav-group EtudiantInfo">
+            <p>Nom Prénom</p>
+            <div class="EtudiantImg">
+                <img src="T:\Incog Zone\IDA Zone\Coding\Developpement Web\School\School project\IDA2WebSite\files\Default ID img 1.jpg">
+            </div>
+        </div>
+        <div class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('active')">
+            <span>☰</span>
+        </div>
+        <nav class="nav-group menu">
+            <a>Acceuil</a>
+            <a>Appréciation etudiant</a>
+            <a>Appréciation enseignement</a>
+            <a>Contact</a>
+            <a>FeedBack</a>
+        </nav>
+    </header>
+    <hr id="hr1">
+    <br>
+    <h1>APPRECIATION SUR VOTRE COURS D'AUJOURD'HUI ET VOTRE PROFESSEUR ?</h1>
+    <form method="POST" action="SuggestionEtudiant.php" class="form1">
+        <div class="middle">
+            <div class="FormEtudiant">
+                <div class="CoursA">
+                    <h3>Comment avez-vous trouvé le cour d'aujourd'hui ?</h3>
+                    <div class="CoursA1" id="reponses">
+                        <input type="radio" name="CoursA">
+                        <label for="CoursA">Très bon</label>
+                        <input type="radio" name="CoursA">
+                        <label for="CoursA">Bon</label>
+                        <input type="radio" name="CoursA">
+                        <label for="CoursA">Mauvais</label>
+                    </div>
+                </div>
+                <div class="CoursB">
+                    <h3>A quel niveau avez-vous compris le cour d'aujourd'hui ?</h3>
+                    <div class="CoursB1" id="reponses">
+                        <input type="radio" name="CoursB">
+                        <label for="CoursB">Très bien</label>
+                        <input type="radio" name="CoursB">
+                        <label for="CoursB">Moyennement</label>
+                        <input type="radio" name="CoursB">
+                        <label for="CoursB">Pas compris</label>
+                    </div>
+                </div>
+                <div class="CoursC">
+                    <h3>Le rithme du cour était t-il adapté ?</h3>
+                    <div class="CoursC1" id="reponses">
+                        <input type="radio" name="CoursC">
+                        <label for="CoursC">Trop rapide</label>
+                        <input type="radio" name="CoursC">
+                        <label for="CoursC">Normale</label>
+                        <input type="radio" name="CoursC">
+                        <label for="CoursC">Trop lent</label>
+                    </div>
+                </div>
+                <hr>
+                <div class="ProfA">
+                    <h3>Comment était le professeur dans ses explications ?</h3>
+                    <div class="ProfA1" id="reponses">            
+                        <input type="radio" name="ProfA">
+                        <label for="ProfA">Très claire</label>
+                        <input type="radio" name="ProfA">
+                        <label for="ProfA">Moyen</label>
+                        <input type="radio" name="ProfA">
+                        <label for="ProfA">Pas claire</label>
+                    </div>
+                </div>
+                <div class="ProfB">
+                    <h3>Le professeur repondait t-il à vos questions ?</h3>
+                    <div class="ProfB1" id="reponses">
+                        <input type="radio" name="ProfB">
+                        <label for="ProfB">Assez</label>
+                        <input type="radio" name="ProfB">
+                        <label for="ProfB">Un peu</label>
+                        <input type="radio" name="ProfB">
+                        <label for="ProfB">Pas du tout</label>
+                    </div>
+                </div>
+                <div class="commentaire">
+                    <label for="commentaire"><h3>Donnez un avis général</h3></label>
+                    <textarea type="text" name="commentaire" placeholder="Saississez votre commentaire ici"></textarea>
+                </div>
+            </div>
+            <div class="timetable">
+                <h3>Emplois du temps</h3>
+                <p>Date : </p>
+                <p>heure : </p>
+                <p>Matière : </p>
+                <p>Nom du professeur : </p>
+            </div>
+        </div>
+        <div class="btnSoumettre">
+            <input type="submit" value="soumettre" class="soumettre">
+        </div>
+    </form>
+
+
+
+    <footer class="foot">
+        <div class="footer">
+            <div class="footer1">
+                <p>Email : <a>crestors@mail.com</a></p>
+                <p>Contact : <a>01 02 03 04 05</a></p>
+            </div>
+            <div class="footer2">
+                <a href="https://www.enseignement.gouv.ci" target="_blank">Site du Ministère de l'Enseignement Supérieur et de la Recherche Scientifique</a>
+                <a href="https://www.education.gouv.ci" target="_blank">Site du Ministère de l'Education Nationnal, de l'Enseigenemnt Technique et de la Recherche Profesionnel</a>
+            </div>
+        </div>
+        <div class="footer3">
+            <p>Pour rendre meilleur l'enseignement en Côte d'Ivoire</p>
+            <p>THE CREATORS</p>
+        </div>
+    </footer>
+</body>
+</html>

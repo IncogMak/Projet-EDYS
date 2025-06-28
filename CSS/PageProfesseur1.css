@@ -1,0 +1,196 @@
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: aqua;
+    font-family: "Arial-Rounded";
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    position:sticky;
+    padding:5px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0;
+    padding-left: 0;
+    top: 0;
+    width: 100vw;
+    background-color: #fff2b6;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+.header a{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*.navbar {
+    position: relative;
+    background-color: rgb(13, 125, 145);
+    padding: 50px;*/
+    /*display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    height: 100px;*
+}*/
+
+.nav-group{
+    gap: 3vw;
+}
+
+.navbar .nav-links{
+    display: flex;
+   
+}
+/*#Menu {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    display : inline-block;
+
+}*/
+
+.EtudiantInfo{
+    text-align: center;
+    background-color: #573823;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+.EtudiantImg{
+    width: 30px;
+    height: 30px;
+    background-color: blueviolet;
+    border-radius: 48px;
+    margin-top: -48px;
+}
+.EtudiantImg img{
+    width: 100%;
+    height: auto;
+    border-radius: 30%;
+    text-align: center;
+}
+.EtudiantInfo p{
+    color: #e0cf81;
+    margin-top: 2%;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.menu{
+    display : flex;
+    padding-left: 3%;
+    padding-right: 5px;
+    background-color: blue;
+}
+.menu a{
+    gap: 100vw;
+    margin-left: 0.1vw;
+    margin-right: 2px;
+    padding-right: 15px;
+    display: inline-block;
+}
+.menu a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 5px;
+    border-radius: 25px;
+    background-color: rgb(102, 70, 0);
+    transition: width 0.3s ease-in-out;
+    width: 0px;
+}
+.menu a:hover::after{
+    width: 90%;
+    margin-left: -2px;
+}
+
+@media (max-width: 760px){
+    .EtudiantInfo{
+        align-items: center;
+        text-align: center;
+        margin-left: 13vw;
+    }
+
+    .menu-toggle{
+        display: block;
+        color: brown;
+        width: 10px;
+        height: 10px;
+        background-color: brown;
+        position: fixed;
+        margin-left: 93vw;
+    }
+
+    .menu-toggle span{
+        cursor: pointer;
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        background-color: #573823;
+        color: #fcea9d;
+        transform: scale(0);
+        transform-origin: right;
+        opacity: 0;
+        transition: transform-origin 2.8s ease, opacity 2.8s ease;
+        overflow: hidden;
+        
+    }
+
+    .menu.active{
+        display: flex;
+        position: absolute;
+        margin-top: 590px;
+        margin-left: 50vw;
+        padding-left: 100px;
+        padding-top: 30%;
+        padding-bottom: 30px;
+        height: 52vh;
+        width: 33vw;
+        gap: 30px;
+        border-bottom-left-radius: 4%;
+        border-top-left-radius: 4%;
+        opacity: 1;
+        transform: scaleY(1);
+        z-index: 2;
+
+    }
+
+    .menu a::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        height: 5px;
+        border-radius: 25px;
+        background-color: #fcea9d;
+        transition: width 0.3s ease-in-out;
+        width: 0px;
+    }
+
+    .menu a:hover::after{
+        width: 90%;
+        margin-left: -2px;
+    }
+}
