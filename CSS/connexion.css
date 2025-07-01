@@ -61,12 +61,13 @@ body{
     padding-top: 90px;
     margin: auto;
     /*text-align: center;*/
+    display:block;
 }
-
-#identifiant{
+.connection input{
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 30px;
     border-style:ridge;
+    height: 20px;
 }
 
 
@@ -80,5 +81,9 @@ body{
     position:static;
     padding: 10px;
     width: 200px;
-
+    transition: all 0.3s ease-in;
+}
+#btnConnexion:hover{
+    filter: invert(100%);
+    border-color: #000000;
 }
