@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="PageAcceuil.css">
+  <title>Mysuggestion</title>
+</head>
+
+
+<body>
+  <!-- La bar de navigation pour acceder au autres pages-->
+  <nav class="navBar">
+    <a href="#" class="logo">MySuggestion</a>
+    <div class="nav-link">
+      <!--La liste non ordonnee pour naviguer entre les pages-->
+      <ul>
+        <li class="Active"><a href="Acceuille">Acceuille</a></li>
+        <li><a href="Sugest-Etudiant">Suggestion</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="A-propos.html">A propos De</a></li>
+      </ul>
+    </div>
+    <img src="image/menu-btn.jpg" alt="menu-btn" class="menu-btn">
+  </nav>
+  <header>
+    <!-- Le texte contenue dans la bar de navogation Expliquant brievement le but du site -->
+    <div class="header-content">
+      <h1>Bienvenue sur Mysuggestion</h1>
+      <img src="image/Fond_Header.jpg" alt="Img-Header" class="Img-Header">
+      <p>Une plateforme d'expression pour étudiants et enseignants.
+        Cette plateforme a été pensée pour donner la parole à tous les
+        acteurs de notre communauté éducative.Que vous soyez étudiant ou enseignant,
+        vous avez ici l'opportunité de partager vos idées, proposer des améliorations
+        ou tout simplement vous exprimer. Votre avis compte,
+        et c’est ensemble que nous construirons un environnement plus dynamique,
+        plus juste et plus efficace. Parcourez les différentes sections,
+        découvrez les suggestions des autres et contribuez à faire évoluer notre cadre de vie académique.
+      </p>
+    </div>
+  </header>
+
+  <hr>
+
+
+  <div class="Tache">
+    <div class="Exprimer">
+      <h2>S'exprimer</h2>
+      <img src="files/Exprimer2.jpg" alt="Img-Exprimer" class="Img-Exprimer">
+      <p>
+        🎓 Parce qu’une bonne communication améliore la vie scolaire…
+        Cet espace donne la parole à ceux qui la vivent au quotidien.
+        Que vous souhaitiez partager, évaluer ou proposer, votre avis compte.
+
+        💬 Exprimez-vous librement.
+        Étudiants comme enseignants, vous avez la parole !
+
+        👨‍🎓 Étudiants
+        • Donnez votre avis sur les cours suivis
+        • Évaluez vos enseignants de manière constructive
+
+        👨‍🏫 Professeurs
+        • Partagez votre retour sur l’implication des étudiants
+        • Signalez les comportements positifs ou problématiques
+
+        ✅ Un espace respectueux et objectif
+        🗣️ Contribuez à une meilleure expérience académique pour tous !
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="Amelioration">
+      <h2>Proposer des ameliorations</h2>
+      <img src="code.jpg" alt="Img-Amelior" class="Img-Amelior">
+      <p>
+        Sur My Suggestion, chaque étudiant devient une force de proposition.
+        Une remarque bien placée peut faire évoluer un cours, une règle
+        ou un espace. Proposer, c’est montrer qu’on tient à son école et
+        qu’on veut l’améliorer. C’est aussi une manière de participer activement
+        à la vie scolaire.Même les enseignants accueillent ces idées
+        avec ouverture et réflexion.
+
+        🧠 Proposer, c’est réfléchir à ce qui pourrait mieux fonctionner
+        au quotidien.
+
+        📣 Exprimer une idée, c’est ne plus subir ce qui dérange, mais agir.
+
+        🔍 Relever un problème, c’est déjà avancer vers une solution.
+
+        🛠️ Chaque suggestion peut améliorer l’ambiance, les outils
+        ou l’organisation.
+
+        🤝 Contribuer, c’est montrer qu’on fait partie de la vie de l’école,
+        pas à côté.
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="Construit-Environnement">
+      <h2>Construire un environnement ideal</h2>
+      <img src="" alt="Img-Construit-Environnement" class="Construit-Environnement">
+      <p>
+        Un bon cadre d’étude, ça se construit ensemble, pas tout seul.
+        Quand chacun fait un effort, l’ambiance devient plus sereine,
+        plus motivante.Grâce à My Suggestion, élèves et profs peuvent
+        bâtir un espace commun. Un environnement idéal, c’est un lieu où
+        on se sent bien, respecté et soutenu. Et tout commence par une idée,
+        un geste, une volonté partagée.
+
+        🧱 Construire ensemble, c’est penser à tous, pas seulement à soi.
+
+        🌱 Un bon environnement naît d’actions simples mais continues.
+
+        🎯 Créer les bonnes conditions, c’est favoriser l’écoute, le respect et
+        le confort.
+
+        🤲 Participer, c’est prendre soin du lieu où on vit une grande partie de
+        sa journée.
+
+        🔄 Un cadre idéal, c’est le résultat d’une volonté partagée, pas d’un miracle.
+      </p>
+    </div>
+  </div>
+
+  <hr class="separat">
+
+  <section id="Contact">
+    <h2>Contactez-nous</h2>
+    <form action="#" method="POST">
+      <div class="Information-User">
+        <label for="nom">*Nom:</label>
+        <input type=" text" name="nom" placeholder="Ex: Jean Dubois" require>
+        <label for="email">*E-mail</label>
+        <input type="email" name="email" placeholder="xyz1234@gmail.com" require>
+        <label for="adresse">Adresse</label>
+        <input type="text" name="adresse" placeholder="Cocody II Plateau">
+        <input type="submit" value="Soumettre">
+        <label for="msg">Message</label>
+        <textarea name="msg" rows="10" cols="50" class="msg-text" placeholder="Votre Message ..."></textarea>
+      </div>
+    </form>
+  </section>
+
+</body>
+
+
+<!--Le scripte qui permet d'avoir un effet de bar de navigation coulissante sur le coté gauche de la page web -->
+<script>
+  const menuBtn = document.querySelector(".menu-btn")
+  const navLink = document.querySelector(".nav-link")
+  const body = document.body
+
+  menuBtn.addEventListener('click', () => {
+    navLink.classList.toggle('mobile_menu');
+    body.classList.toggle('menu-ouvert');
+  })
+</script>
+
+
+</html>
